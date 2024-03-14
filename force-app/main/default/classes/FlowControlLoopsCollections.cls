@@ -49,7 +49,13 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        return null; // Replace null with the variable you used to store the result
+      if (age >= 18) {
+      return true;
+    } if (age < 18) {
+      return false;
+    } else {
+      return null; // Replace null with the variable you used to store the result
+    }
     }
 
     /**
@@ -64,11 +70,16 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
         Integer largestNum = null;
-
-        return null; // Replace null with the variable you used to store the result
-    }
-
-
+               
+        if (num1 == null || num2 == null){
+          return null;
+        } else {
+        largestNum = Math.max(num1, num2);
+        return largestNum;
+        }
+      }       
+    //    return null; // Replace null with the variable you used to store the result
+    
     /**
      * Question 4
      * Checks if a number is positive, negative, or zero.
