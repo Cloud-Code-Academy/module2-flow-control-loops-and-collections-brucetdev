@@ -208,19 +208,21 @@ public with sharing class FlowControlLoopsCollections {
      * @return The new string with the inputString repeated repeatCount times.
      */
     public static String repeatString(String inputString, Integer repeatCount) {
-        // Initialize the result String
+      String repeatedString = ''; 
+      // Initialize the result String
+      // Use a for loop to append the inputString to the result string repeatCount times
+      for (Integer i = 0; i < repeatCount; i++) {
+          repeatedString += inputString;
+          
+          // Add a semicolon and space if it's not the last repetition
+          if (i < repeatCount - 1) {
+              repeatedString += '; ';
+          }
+      }
+      return repeatedString;
+  }
 
-        // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
-            // If it is not the last iteration, add a semicolon to separate the strings
-        }
-        */
-
-        // Return the final result string
-        return null; // Replace null with the variable you used to store the result
-    }
+   
 
     /**
      * Question 11
@@ -230,14 +232,13 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static List<Integer> createAndPopulateList() {
         // Create a new list of integers
-
+    List<Integer> createAndPopulateList = new List<Integer>();
         // Add the integers 1, 2, and 3 to the list
-        // add 1
-        // add 2
-        // add 3
-
+        createAndPopulateList.add(1);// add 1
+        createAndPopulateList.add(2);// add 2
+        createAndPopulateList.add(3);// add 3
         // Return the populated list
-        return null; // Replace null with the variable you used to store the result
+        return createAndPopulateList; // Replace null with the variable you used to store the result
     }
 
     /**
